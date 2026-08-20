@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 # تنظیمات پیش‌فرض
 CONFIG_FILE = "bot_config.json"
 DEFAULT_CONFIG = {
-    "host_usernames": ["ad0ri"],
+    "host_usernames": [""],
     "admin_usernames": ["ad0ri"],
     "vip_usernames": [],
     "banned_users": [],
@@ -2713,7 +2713,7 @@ async def main():
     from http.server import BaseHTTPRequestHandler, HTTPServer
     
     logger.info("تلاش برای بارگذاری متغیرهای محیطی...")
-    room_id = os.getenv("ROOM_ID", "695aacfcf8768f4d7cc5e6c9")
+    room_id = os.getenv("ROOM_ID", "697b2c0636e5c629a9e73e7a")
     api_token = os.getenv("API_TOKEN", "0afd19059b8eae33e9d8f161f5346c61c73bd89175f00957242ee1511d171952")
     
     if not room_id or not api_token:
